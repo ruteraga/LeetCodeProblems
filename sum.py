@@ -14,6 +14,7 @@ class Solution(object):
                 l.sort()
                 if l not in dict and len(l)!=0:
                     dict.append(l)
+            nums.pop(i)
         return dict
 
 sol=Solution()
