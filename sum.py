@@ -1,3 +1,4 @@
+#for next try. to use recursion with a for loop 
 class Solution(object):
     def threeSum(self, nums):
         dict=[]
@@ -15,7 +16,7 @@ class Solution(object):
                 if l not in dict and len(l)!=0:
                     dict.append(l)
             nums.pop(i)
-        return dict
+        return threeSum(nums)
 
 sol=Solution()
 l=[-1,0,1,2,-1,-4]
